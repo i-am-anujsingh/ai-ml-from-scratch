@@ -1,0 +1,40 @@
+## MACHINE LEARNING ##
+
+# What is Machine Learning (ML)?
+Machine Learning (ML) is a subfield of Artificial Intelligence (AI, Artificial Intelligence) where computers learn patterns from data and improve their performance on a task without being explicitly programmed with rules for every situation.
+
+# Types of Machine Learning
+
+-> Supervised: Provide labels/ans with the input data
+-> Unsupervised: Do not Provide labels/ans with the input data
+-> Semi-supervised: Provide some labels/ans with the input data not all labels
+-> Reinforcement: Reinforcement Learning (RL) is about an agent interacting with an environment, taking actions, and receiving rewards or penalties.
+
+# The ML workflow: how an ML project actually runs
+
+-> Problem definition:
+Clarify what you want to predict or decide and why it matters (e.g., reduce churn, detect fraud).
+
+-> Data collection:
+Gather raw data from databases, logs, sensors, images, etc.
+
+-> Data preprocessing (data cleaning + feature engineering):
+Handle missing values, remove outliers, normalize values, convert text/categories into numbers, create useful features. Data quality often matters more than model choice; “garbage in, garbage out”.
+
+-> Model selection:
+Choose an algorithm family: linear models, decision trees, random forests, gradient boosting, neural networks, etc.
+
+-> Training the model:
+Feed training data to the algorithm, adjust internal parameters to reduce error according to a loss function (like MSE, cross-entropy).
+
+-> Evaluation:
+Measure performance on separate validation/test data using chosen metrics.
+
+-> Tuning and iteration:
+Adjust hyperparameters (like learning rate, tree depth, regularization strength) and repeat training and evaluation.
+
+-> Deployment and monitoring:
+Put the model into production (API, app, embedded in a system), monitor its performance, retrain as data distribution changes
+
+**The model starts with some random parameters, makes bad predictions, measures how bad they are via the loss, and then the optimizer nudges the parameters in a direction that makes the loss smaller. Repeating this many times is training.**
+
