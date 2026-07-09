@@ -3,16 +3,16 @@ Training file of the digit recognition neural network
 '''
 import numpy as np
 import pandas as pd
+from core.layer import Layer_Dense
+from core.loss import Loss_CategoricalCrossentropy
+from core.activation import Activation_ReLU, Activation_Softmax
+from core.soft_loss import Activation_Softmax_Loss_CategoricalCrossentropy
 
 np.random.seed(0)
 
-learning_rate = 0.013 
-epochs = 1000
+learning_rate = 0.013
 
-from core.layer import Layer_Dense
-from core.activation import Activation_ReLU, Activation_Softmax
-from core.loss import Loss, Loss_CategoricalCrossentropy
-from core.soft_loss import Activation_Softmax_Loss_CategoricalCrossentropy
+epochs = 1000
 
 # ----------------------------
 # Load Data

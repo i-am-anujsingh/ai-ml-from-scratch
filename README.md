@@ -85,8 +85,8 @@ This project will be added to the repository once the implementation is fully or
 * [x] Neural Network Fundamentals
 * [x] Feedforward Neural Network
 * [x] Transformer Architecture
-* [ ] GPT Model
-* [ ] Fine-tuning
+* [X] GPT Model
+* [X] Fine-tuning
 * [ ] Retrieval-Augmented Generation (RAG)
 
 ## Future Projects

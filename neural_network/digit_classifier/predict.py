@@ -1,11 +1,11 @@
 '''
-model file of the digit recognition neural network
+Model file of the digit recognition neural network
 '''
 
-import numpy as np
-import matplotlib.pyplot as plt
 import cv2
-
+import numpy as np
+from pathlib import Path
+import matplotlib.pyplot as plt
 from core.layer import Layer_Dense
 from core.activation import Activation_ReLU, Activation_Softmax
 
@@ -36,9 +36,8 @@ activation2 = Activation_Softmax()
 # ----------------------------
 # Loading the Model
 # ----------------------------
-from pathlib import Path
 
-MODEL_PATH = Path(__file__).parent / "digit_model.npz"
+MODEL_PATH = r"C:\Users\HP\Desktop\AI-ML\machineLearning\neural_network\models\digit_model.npz"
 saved = np.load(MODEL_PATH)
 dense1.weights = saved["dense1_weights"]
 dense1.biases = saved["dense1_biases"]

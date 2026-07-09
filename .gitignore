@@ -2,8 +2,13 @@
 venv/
 .venv/
 
+# Test files
 test/
 test/*
+
+# GPT2 parameters
+gpt2/
+gpt2/*
 
 # Python cache
 __pycache__/
@@ -17,3 +22,6 @@ __pycache__/
 
 # OS files
 .DS_Store
+
+# ignoring all model to push into repo due large size
+*.pth
