@@ -10,12 +10,17 @@ Rather than only using existing libraries, I focus on implementing the mathemati
 
 ## Repository Structure
 
-```text
+```
 AI-From-Scratch/
 │
 ├── data_sets/
 │
 ├── llm/
+│   ├── core/
+│   ├── custom_llm/
+│   └── finetune/
+│       ├── classifing_model/
+│       └── instruction_based/
 │
 ├── neural_network/
 │   ├── core/
@@ -33,7 +38,7 @@ AI-From-Scratch/
 
 A feedforward neural network implemented from scratch using Python and NumPy.
 
-**Key Concepts**
+**Concepts**
 
 * Dense Layers
 * ReLU
@@ -45,13 +50,11 @@ A feedforward neural network implemented from scratch using Python and NumPy.
 
 ---
 
-### Large Language Model (In Progress)
+### Large Language Model
 
-Currently implementing a GPT-style language model while studying *LLMs from Scratch* by Sebastian Raschka.
+A GPT-style language model while studying *LLMs from Scratch* by Sebastian Raschka.
 
-This project will be added to the repository once the implementation is fully organized and documented.
-
-**Topics Covered**
+**Concepts**
 
 * Tokenization
 * Embeddings

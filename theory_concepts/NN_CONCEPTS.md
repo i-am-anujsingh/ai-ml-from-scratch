@@ -6,7 +6,7 @@ This document contains the fundamental concepts I learned while implementing a f
 
 # Neural Network Architecture
 
-```text
+```
 Input
   │
   ▼

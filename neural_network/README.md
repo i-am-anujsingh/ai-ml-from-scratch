@@ -9,8 +9,12 @@ The model classifies handwritten digits from **0–9** using a feedforward neura
 
 ## Project Structure
 
-```text
+```
 neural_network/
+│
+├── assets/
+│   ├── training_output.png
+│   └── prediction_output.png
 │
 ├── core/
 │   ├── activation.py
@@ -21,12 +25,10 @@ neural_network/
 ├── digit_classifier/
 │   ├── train.py
 │   ├── predict.py
-│   ├── digit_model.npz
 │   └── imgs/
 │
-├── assets/
-│   ├── training_output.png
-│   └── prediction_output.png
+├── models/
+│   └── digit_model.npz
 │
 └── README.md
 ```
