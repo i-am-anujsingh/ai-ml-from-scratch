@@ -69,7 +69,6 @@ LLM/
 ├── utils/
 │   ├── gpt_downloader.py
 │   ├── load_pretrain_gpt.py
-│   ├── loss_calculation.py
 │   └── raw_data.py
 │
 └── README.md
