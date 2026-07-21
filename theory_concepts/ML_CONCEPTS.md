@@ -247,3 +247,110 @@ Repeat Until Convergence
 * Bias and Variance
 * Regularization
 * Hyperparameters
+
+
+---
+
+# Regression
+
+Regression is a machine learning technique used to predict a continuous numerical value.
+
+## Types of Regression
+
+* Linear Regression
+* Multiple Linear Regression
+* Polynomial Regression
+* Ridge Regression
+* Lasso Regression
+* Elastic Net
+
+###  Linear Regression
+
+This is the first and one of the most important machine learning algorithms. Many later algorithms are built on the same principles.
+
+Linear Regression is an algorithm that learns a **straight-line relationship** between the input (X) and the output (y).
+
+Imagine you're trying to predict a student's exam marks based on the number of hours they studied.
+
+| Hours Studied | Marks |
+| ------------: | ----: |
+|             1 |    30 |
+|             2 |    40 |
+|             3 |    50 |
+|             4 |    60 |
+|             5 |    70 |
+
+If we plot these points, they almost form a straight line.
+
+Marks
+70 |                           ●
+60 |                      ●
+50 |                 ●
+40 |            ●
+30 |       ●
+   +---------------------------------
+     1    2    3    4    5
+         Hours Studied
+
+Linear Regression tries to find the **best straight line** that represents this relationship.
+
+### Regularization
+
+Regularization is not a new algorithm. It is a technique used to prevent overfitting.
+
+There are three types of Regularization:-
+
+1. Ridge Regression (L2 Regularization)
+2. Lasso Regression (L1 Regularization)
+3. Elastic Net (L1 + L2)
+
+#### Ridge Regression (L2 Regularization)
+
+Ridge Regression adds the square of the weights to the cost function.
+
+The cost becomes: **J=MSE+λ∑w^2**
+
+* MSE measures prediction error.
+* λ (lambda) controls how strongly we penalize large weights.
+* ∑w^2 is the sum of the squared weights.
+
+In linear regression the gradient is calculated through **J=−(2/n)*∑​X.T(y−y^​)** but in **Ridge** we add small panalty to the gradient: **J=−(2/n)∑​X.T(y−y^​)+2λw**.
+
+
+#### Lasso Regression (L1 Regularization)
+
+Lasso Regression is very similar to Ridge Regression, but it has one unique property:
+
+It can automatically remove unnecessary features by making their weights exactly zero.
+
+This is why Lasso is often used for feature selection.
+
+In **Lasso** the cost function becomes **J=MSE+λ∑∣w∣** Instead of squaring the weights, we use their absolute values.
+
+
+### Underfitting vs Good Fit vs Overfitting
+
+* Underfitting: Too simple; misses the underlying pattern.
+* Good Fit: Captures the trend without chasing noise.
+* Overfitting: Too complex; follows every fluctuation.
+
+#### Why Does Overfitting Happen?
+
+Usually because of one or more of these reasons:
+* Too many features.
+* Model is too complex.
+* Polynomial degree is too high.
+* Too little training data.
+* Training for too long (common in deep learning).
+* Noise in the data.
+
+#### How Can We Prevent Overfitting?
+
+Several techniques exist:
+* Collect more data.
+* Feature selection.
+* Cross-validation.
+* Early stopping.
+* Dropout.
+* Regularization.
+

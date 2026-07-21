@@ -25,3 +25,12 @@ __pycache__/
 
 # ignoring all model to push into repo due large size
 *.pth
+
+cnn_dataset/
+cnn_dataset/*
+
+Classical_Machine_Learning/
+
+__init__.py
+
+*.txt

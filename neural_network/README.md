@@ -124,5 +124,11 @@ This project is part of my AI From Scratch learning journey.
 
 ## Related Learning Resources
 
-- 📘 Machine Learning Concepts (`theory_concepts/machine-learning-concepts.md`)
-- 📘 Neural Network Concepts (`theory_concepts/neural-network-concepts.md`)
+- 📘 Machine Learning Concepts (`theory_concepts/ML_CONCEPTS.md`)
+- 📘 Neural Network Concepts (`theory_concepts/NN_CONCEPTS.md`)
+
+## Framework Policy
+
+This project intentionally avoids using TensorFlow, PyTorch, Keras, or any deep learning framework for implementing the CNN.
+
+Only NumPy is used for numerical computations. Every layer, gradient computation, and parameter update is implemented manually for educational purposes.

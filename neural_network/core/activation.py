@@ -8,6 +8,7 @@ class Activation_ReLU:
     def forward(self, inputs):
         self.inputs = inputs
         self.output = np.maximum(0, inputs)
+        return self.output
 
     def backward(self, dvalues):
         self.dinputs = dvalues.copy()
@@ -30,3 +31,4 @@ class Activation_Softmax:
             exp_values /
             np.sum(exp_values, axis=1, keepdims=True)
         )
+        return self.output

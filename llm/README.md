@@ -2,6 +2,13 @@
 
 A GPT-style Large Language Model implemented from scratch using PyTorch to understand how modern transformer-based language models are built, trained, and fine-tuned.
 
+# Architecture
+
+Complete archutecturen diagram of GPT-2 styled LLM.
+*AI Generated*
+
+![LLM ARCHITECTURE](assets/LLM_architecture.png)
+
 ## Goals
 
 The objective of this project is to understand the internal workings of modern Large Language Models rather than simply using existing APIs or pretrained models.

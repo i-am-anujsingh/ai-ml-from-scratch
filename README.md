@@ -94,9 +94,7 @@ A GPT-style language model while studying *LLMs from Scratch* by Sebastian Rasch
 
 ## Future Projects
 
-* CNN from Scratch
 * Vision Transformer (ViT)
-* GPT Training Pipeline
 * Character-Level Language Model
 * Retrieval-Augmented Generation
 * AI-powered Applications
