@@ -15,11 +15,16 @@ The model classifies handwritten digits from **0–9** using a custom dataset of
 ```
 cnn/
 │
+├── core/
+│   └── batch_processing_layers/
+│       ├── convolution.py
+│       ├── flatten.py
+│       └── maxpool.py
+│
 ├── digit_classifier/
+│   ├── cnn_batch_train.py
 │   ├── train.py
 │   └── predict.py
-│
-├── cnn_batch.py
 │
 ├── cnn.py
 │
@@ -133,7 +138,6 @@ No TensorFlow, PyTorch, Keras, or other deep learning libraries were used to bui
 
 * Mini-Batch Gradient Descent
 * Multiple Convolution Layers
-* Multi-Channel Feature Maps
 * Batch Normalization
 * Dropout Regularization
 * Adam Optimizer

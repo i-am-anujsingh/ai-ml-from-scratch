@@ -3,7 +3,7 @@ Training file of the digit recognition neural network
 '''
 import numpy as np
 import pandas as pd
-from core.layer import Layer_Dense
+from core.dense_layer import Layer_Dense
 from core.loss import Loss_CategoricalCrossentropy
 from core.activation import Activation_ReLU, Activation_Softmax
 from core.soft_loss import Activation_Softmax_Loss_CategoricalCrossentropy

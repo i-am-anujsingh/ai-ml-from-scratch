@@ -23,6 +23,7 @@ AI-From-Scratch/
 │       └── instruction_based/
 │
 ├── neural_network/
+│   ├── cnn/
 │   ├── core/
 │   └── digit_classifier/
 │
@@ -47,6 +48,9 @@ A feedforward neural network implemented from scratch using Python and NumPy.
 * Backpropagation
 * Gradient Descent
 * Cross-Entropy Loss
+* Convolution
+* Pooling
+* Padding
 
 ---
 
@@ -86,6 +90,7 @@ A GPT-style language model while studying *LLMs from Scratch* by Sebastian Rasch
 * [x] Python
 * [x] NumPy
 * [x] Neural Network Fundamentals
+* [x] Convolutional Neural Network Fundamentals
 * [x] Feedforward Neural Network
 * [x] Transformer Architecture
 * [X] GPT Model

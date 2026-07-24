@@ -2,11 +2,10 @@ import numpy as np
 
 from neural_network.cnn.cnn import(
     Convolution_Layer,
-    ReLU_Layer,
     MaxPooling_Layer,
     Flatten_Layer
 )
-from neural_network.core.layer import Layer_Dense
+from neural_network.core.dense_layer import Layer_Dense
 from neural_network.core.loss import Loss_CategoricalCrossentropy
 from neural_network.core.activation import Activation_ReLU, Activation_Softmax
 from neural_network.core.soft_loss import Activation_Softmax_Loss_CategoricalCrossentropy
@@ -18,7 +17,7 @@ saved = np.load(MODEL_PATH)
 image = None
 
 conv = Convolution_Layer(3)
-convReLU = ReLU_Layer()
+convReLU = Activation_ReLU()
 pool = MaxPooling_Layer()
 flatten = Flatten_Layer()
 

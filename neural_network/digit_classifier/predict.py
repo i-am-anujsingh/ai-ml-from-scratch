@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 from pathlib import Path
 import matplotlib.pyplot as plt
-from core.layer import Layer_Dense
+from core.dense_layer import Layer_Dense
 from core.activation import Activation_ReLU, Activation_Softmax
 
 # ----------------------------

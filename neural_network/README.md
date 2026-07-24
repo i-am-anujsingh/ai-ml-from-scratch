@@ -13,12 +13,15 @@ The model classifies handwritten digits from **0–9** using a feedforward neura
 neural_network/
 │
 ├── assets/
+│   ├── cnn_digit_prediction_training_output.png
 │   ├── training_output.png
 │   └── prediction_output.png
 │
+├── cnn/
+│
 ├── core/
 │   ├── activation.py
-│   ├── layer.py
+│   ├── dense_layer.py
 │   ├── loss.py
 │   └── soft_loss.py
 │
@@ -98,7 +101,6 @@ The trained model correctly classifies handwritten digits from the custom datase
 
 * Larger dataset
 * Data augmentation
-* CNN implementation
 * Better weight initialization
 * Batch normalization
 

@@ -1,4 +1,5 @@
 import numpy as np
+np.random.seed(0)
 
 class Convolution_Layer:
     def __init__(self, k):
@@ -35,17 +36,6 @@ class Convolution_Layer:
 
         self.dbias = dbias
         self.dkernel = dkernel
-                
-class ReLU_Layer:
-    def forward(self, inputs):
-        self.input = inputs
-        self.output = np.maximum(0,inputs)
-        return self.output
-    
-    def backward(self, dvalues):
-        self.dinputs = dvalues.copy()
-        self.dinputs[self.input <= 0] = 0
-        return self.dinputs
 
 class MaxPooling_Layer:
     def __init__(self, pool_size=2):
